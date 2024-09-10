@@ -70,13 +70,13 @@ const SubTotal = (props) => {
         <div className="flex justify-between mb-1.5 text-sm font-light">
           <span className="font-semibold">Discount:</span>
           <span>
-            ({cntx.discountData}%){cntx.changeCurrency} {disc.toFixed(2)}
+            ({cntx.discountData}%) {cntx.changeCurrency} {disc.toFixed(2)}
           </span>
         </div>
         <div className="flex justify-between mb-1.5 text-sm font-light">
           <span className="font-semibold">Tax:</span>
           <span>
-            ({cntx.taxData}%){cntx.changeCurrency} {currTax}
+            ({cntx.taxData }%) {cntx.changeCurrency} {currTax}
           </span>
         </div>
         <div className="border border-gray-400 bg-gray-400 my-2"></div>

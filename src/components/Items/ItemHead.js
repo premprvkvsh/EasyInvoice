@@ -19,7 +19,7 @@ const ItemHead = () => {
       <span className="flex-grow-[0.95] text-sm font-bold mx-1">QTY</span>
       <span className="flex-grow-[1.2] text-sm font-bold mx-1">PRICE/RATE</span>
       <span className="flex-grow-[0.6] text-sm font-bold mx-1">AMOUNT</span>
-      <span className="flex-grow-[0.1] text-sm font-bold mx-1">ACT</span>
+      <span className="flex-grow-[0.1] text-sm font-bold mx-1">DEL</span>
     </div>
   );
 };

@@ -107,7 +107,7 @@ const BillingDetails = () => {
             }}
             value={BillingDetails.cust_name}
             type="text"
-            placeholder="Sender's name"
+            placeholder="Receiver's name"
             className="block w-full mt-2 p-2 text-base border rounded"
           />
         </label>
@@ -122,7 +122,7 @@ const BillingDetails = () => {
             }}
             value={BillingDetails.cust_email}
             type="email"
-            placeholder="Email address"
+            placeholder="Enter the email address"
             className="block w-full mt-2 p-2 text-base border rounded"
           />
         </label>
@@ -156,8 +156,8 @@ const BillingDetails = () => {
             }}
             value={BillingDetails.my_name}
             type="text"
-            placeholder="Receiver's name"
-            className="block w-full mt-2 p-2 text-base border rounded"
+            placeholder="Sender's name"
+            className="block w-full mt-2 p-2 text-base border rounded rounded-md"
           />
         </label>
         <label className="block mb-4">
@@ -171,7 +171,7 @@ const BillingDetails = () => {
             }}
             value={BillingDetails.my_email}
             type="email"
-            placeholder="Email address"
+            placeholder="Enter the email address"
             className="block w-full mt-2 p-2 text-base border rounded"
           />
         </label>
