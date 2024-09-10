@@ -28,7 +28,7 @@ npm start
 ### To - Do
 
 <ul>
-<li> Add items and get the bill</li>
-  <li>[ ] Download pdf</li>
-  <li>[ ]  send invoice through whatsapp, email</li>
+  <li> Add items and get the bill</li>
+  <li> Download pdf</li>
+  <li> Send invoice through whatsapp, email</li>
 </ul>
