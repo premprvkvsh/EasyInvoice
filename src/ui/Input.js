@@ -22,7 +22,7 @@
 const Input = (props) => {
   return (
     <input
-      className={`p-1 outline-blue-300 outline-offset-2 outline-2 bg-blue-50 rounded-sm border-none text-gray-800 font-light placeholder:text-gray-400 placeholder:font-thin ${props.className}`}
+      className={`p-1 outline-blue-300 outline-offset-2 outline-2 bg-zinc-300 rounded-sm border-none text-gray-800 font-light placeholder:text-gray-600 placeholder:font-thin ${props.className}`}
       type={props.type}
       min={props.min}
       value={props.value}

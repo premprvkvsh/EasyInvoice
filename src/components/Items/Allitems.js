@@ -52,7 +52,7 @@ const Allitems = () => {
   ));
 
   return (
-    <div className="border-t border-b border-black pb-4">
+    <div className=" border-t border-b border-black pb-4">
       <ItemHead />
       {items}
       <Button onClick={cntx.addItemfun} className="block mt-4">

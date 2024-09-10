@@ -31,16 +31,18 @@
     justify-content: space-around;
   }
   .download_invoice {
-    width: 45%;
+    width: 40%;
+    color: rgb(255, 255, 255);
+    background-color: #459c3e;
   }
   .send_invoice {
-    width: 45%;
-    color: black;
-    background-color: white;
+    width: 40%;
+    color: rgb(255, 255, 255);
+    background-color: #459c3e;
   }
   .send_invoice:hover {
-    background-color: #106bf3;
-    color: white;
+    background-color: #206932;
+    color: rgb(255, 255, 255);
   }
   
   @keyframes example {
@@ -134,12 +136,12 @@
   } */
   @media (max-width: 1025px) {
     .ReviewModal_outer {
-      width: 80%;
+      width: 100%;
     }
   }
   @media (max-width: 680px) {
     .ReviewModal_outer {
-      width: 90%;
+      width: 100%;
     }
     /* .ReviewModal_inner {
       padding: 0.5em 0.3em;

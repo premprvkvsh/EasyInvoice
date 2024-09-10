@@ -15,7 +15,7 @@
 const Button = (props) => {
   return (
     <button
-      className={`px-4 py-3 text-white font-medium tracking-wide border-none outline-none bg-blue-600 rounded-md cursor-pointer transition-colors duration-300 ease-in-out hover:bg-blue-700 ${props.className}`}
+      className={`px-4 py-3 text-neutral-50 font-medium tracking-wide border-none outline-none bg-green-600 rounded-2xl cursor-pointer transition-colors duration-300 ease-in-out hover:bg-green-800 ${props.className}`}
       onClick={props.onClick}
       type={props.type || "button"}
     >
