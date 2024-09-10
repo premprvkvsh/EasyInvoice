@@ -1,11 +1,11 @@
-<!-- # EasyInvoice - React App
+# EasyInvoice - React App
 
 An EasyInvoice App built with React. Add unlimited items, configure quantity, rates, tax rates and discounts.
 You can Download as PDFs to your device, Send Mail or WhatsApp the Invoice.
 
 ## Live Demo
 
-[inv-gen.netlify.app](https://inv-gen.netlify.app/)
+[easy-invoice-one.vercel.app](https://easy-invoice-one.vercel.app)
 
 ## ScreenShots
 
@@ -16,7 +16,7 @@ You can Download as PDFs to your device, Send Mail or WhatsApp the Invoice.
 ### Installation
 
 ```
-git clone https://github.com/manavsiddharthgupta/Invoice-Generator.git
+git clone https://github.com/premprvkvsh/EasyInvoice
 
 npm install
 
@@ -26,6 +26,7 @@ npm start
 ### To - Do
 
 <ul>
+<li> Add items and get the bill</li>
   <li>[ ] Download pdf</li>
   <li>[ ]  send invoice through whatsapp, email</li>
-</ul> -->
+</ul>
