@@ -1,6 +1,6 @@
-<!-- # Invoice Generator - React App
+<!-- # EasyInvoice - React App
 
-An Invoice Generator App built with React. Add unlimited items, configure quantity, rates, tax rates and discounts.
+An EasyInvoice App built with React. Add unlimited items, configure quantity, rates, tax rates and discounts.
 You can Download as PDFs to your device, Send Mail or WhatsApp the Invoice.
 
 ## Live Demo
@@ -9,7 +9,7 @@ You can Download as PDFs to your device, Send Mail or WhatsApp the Invoice.
 
 ## ScreenShots
 
-<img width="900" alt="image" src="https://user-images.githubusercontent.com/79929708/172037277-78446f08-36cf-484e-98e8-1f32fc34f00e.png">
+<img width="900" alt="image" src="">
 
 <img width="900" alt="image" src="https://user-images.githubusercontent.com/79929708/172037225-a4e3db1f-a258-4a28-b26e-2c531008a230.png">
 

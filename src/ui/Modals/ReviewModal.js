@@ -1,7 +1,48 @@
+// import React from "react";
+// import Button from "../Button";
+// import "./ReviewModal.css";
+// import ReviewModalInner from "./ReviewModalInner";
+
+// const Modal = (props) => {
+//   return (
+//     <div onClick={props.onClick} className="modal">
+//       {props.children}
+//     </div>
+//   );
+// };
+// const ReviewModal = (props) => {
+//   const generate = (e) => {
+//     e.preventDefault();
+//     console.log("start");
+//   };
+
+//   return (
+//     <React.Fragment>
+//       <Modal onClick={props.onSubmit}></Modal>
+//       <div className="ReviewModal_outer">
+//         <ReviewModalInner id="content" />
+//         <div className="generate_btn">
+//           <Button className="download_invoice" onClick={generate}>
+//             Download Invoice
+//           </Button>
+//           <Button className="send_invoice" onClick={generate}>
+//             Send Invoice
+//           </Button>
+//         </div>
+//       </div>
+//     </React.Fragment>
+//   );
+// };
+// export default ReviewModal;
+
+
+
 import React from "react";
 import Button from "../Button";
 import "./ReviewModal.css";
 import ReviewModalInner from "./ReviewModalInner";
+import jsPDF from "jspdf";
+import emailjs from "emailjs-com";
 
 const Modal = (props) => {
   return (
@@ -10,10 +51,36 @@ const Modal = (props) => {
     </div>
   );
 };
+
 const ReviewModal = (props) => {
-  const generate = (e) => {
+  const generatePDF = (e) => {
     e.preventDefault();
-    console.log("start");
+    const doc = new jsPDF();
+    const content = document.getElementById("content").innerText;
+    doc.text(content, 10, 10);
+    doc.save("invoice.pdf");
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .send(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        {
+          message: document.getElementById("content").innerText,
+          user_email: "user@example.com",
+        },
+        "YOUR_USER_ID"
+      )
+      .then(
+        (result) => {
+          console.log("Email successfully sent!", result.text);
+        },
+        (error) => {
+          console.log("Failed to send email.", error.text);
+        }
+      );
   };
 
   return (
@@ -22,10 +89,10 @@ const ReviewModal = (props) => {
       <div className="ReviewModal_outer">
         <ReviewModalInner id="content" />
         <div className="generate_btn">
-          <Button className="download_invoice" onClick={generate}>
+          <Button className="download_invoice" onClick={generatePDF}>
             Download Invoice
           </Button>
-          <Button className="send_invoice" onClick={generate}>
+          <Button className="send_invoice" onClick={sendEmail}>
             Send Invoice
           </Button>
         </div>
@@ -33,7 +100,11 @@ const ReviewModal = (props) => {
     </React.Fragment>
   );
 };
+
 export default ReviewModal;
+
+
+
 
 // import React from "react";
 // import Button from "../Button";

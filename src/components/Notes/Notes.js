@@ -29,13 +29,13 @@ const Notes = () => {
   const cntx = useContext(AuthContext);
 
   return (
-    <div className="my-2 py-4 notes_form">
-      <span className="text-sm font-semibold">Notes:</span>
+    <div className="my-2 py-4 notes_form ">
+      <span className="text-sm font-bold">Add notes:</span>
       <textarea
         onChange={(e) => cntx.setNotefun(e.target.value)}
         rows="2"
         value={cntx.notesData}
-        className="mt-2 w-full p-1 outline outline-2 outline-blue-200 bg-blue-50 rounded-sm border-none text-gray-700 font-light"
+        className="mt-2 w-full p-1 outline outline-2 outline-green-600 bg-green-100 rounded-md border-none text-gray-900 font-light"
       />
     </div>
   );
