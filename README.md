@@ -1,6 +1,6 @@
-# Invoice Generator - React App
+<!-- # Invoice Generator - React App
 
-An Invoice Generator App built with React. Add unlimited items, configure quantity, rates, tax rates and discounts.                                                 
+An Invoice Generator App built with React. Add unlimited items, configure quantity, rates, tax rates and discounts.
 You can Download as PDFs to your device, Send Mail or WhatsApp the Invoice.
 
 ## Live Demo
@@ -28,4 +28,4 @@ npm start
 <ul>
   <li>[ ] Download pdf</li>
   <li>[ ]  send invoice through whatsapp, email</li>
-</ul>
+</ul> -->
