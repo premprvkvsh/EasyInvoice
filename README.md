@@ -1,7 +1,6 @@
 # EasyInvoice - React App
 
-An EasyInvoice App built with React. Add unlimited items, configure quantity, rates, tax rates and discounts.
-You can Download as PDFs to your device, Send Mail or WhatsApp the Invoice.
+An EasyInvoice App, built with React is a user-friendly invoice generator application designed to streamline the process of creating, managing, and sending invoices.
 
 ## Live Demo
 
